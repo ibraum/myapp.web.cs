@@ -1,0 +1,15 @@
+﻿@model MyApp.web.Models.Item;
+
+@{
+	<form asp-action="Create" class="w-100 h-100 d-flex align-items-center justify-content-center flex-column gap-2">
+		<h1>Create an item 😒</h1>
+		<div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column gap-3">
+			<div class="w-100 h-50 d-flex justify-content-center">
+				<input asp-for="Name" type="text" name="name" value="" placeholder="Enter item title" class="w-50 h-25 px-3 py-2" />
+			</div>
+			<div class="w-100 h-50 d-flex justify-content-center">
+				<input type="submit" name="name" value="Submit" class="w-50 h-25 px-3 py-2 bg-primary text-white border-0 rounded" />
+			</div>
+		</div>
+	</form>
+}
